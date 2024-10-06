@@ -1,0 +1,16 @@
+<div class="title-container">
+  <img [src]="titleImage" alt="Title" class="title-image">
+</div>
+
+<div class="home-container">
+  <div class="background-images">
+    <ng-container *ngFor="let image of backgroundImages; let i = index">
+      <img [src]="image.src" [alt]="'Background ' + (i + 1)" 
+           [class]="'floating-image ' + image.side" [id]="'floating-image-' + i">
+    </ng-container>
+  </div>
+  <div class="center-content">
+
+    
+  </div>
+</div>
